@@ -10,8 +10,7 @@ app.use(cors());
 const conexion = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '2210', // Recordar que esta es la contraseña que se tiene en la base de datos local, en si nuestra base de datos...
-    // password: 'root',
+    password: 'root', // Recordar que esta es la contraseña que se tiene en la base de datos local, en si nuestra base de datos...
     database: 'tienda_en_linea'
 })
 
