@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <button id="btnCrear" class="btn btn-primary">Crear cliente</button>
+        <table id="tablaClientes">
+            <thead>
+                <tr>
+                    <th class="visually-hidden">ID</th>
+                    <th>Nombre</th>
+                    <th>Documento Identidad</th>
+                    <th>Telefono</th>
+                    <th>Correo</th>
+                    <th>Estatura</th>
+                    <th>Edad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="modalCliente" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Cliente</h5>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="formCliente">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="documento">Documento de Identidad:</label>
+                        <input type="text" id="documento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Telefono:</label>
+                        <input type="text" id="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo electronico:</label>
+                        <input type="email" id="correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="estatura">Estatura:</label>
+                        <input type="number" id="estatura" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" required>
+                    </div>
+                    <div class="form-footer">
+                        <button type="button" class="btn btn-secondary close-btn">Cerrar</button>
+                        <button type="submit" class="btn btn-success">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="code.js"></script>
+
+</html>
